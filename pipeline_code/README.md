@@ -171,14 +171,6 @@ python scripts/prepare_external_dataset.py \
   --output-csv data/external/archived_ibm_eval.csv
 ```
 
-## Recommended paper use
-
-For a main-track submission, use:
-
-- `fig03_adaptation_overall_mae` as the main adaptation figure,
-- `fig04_acquisition_overall_mae` as the active selection figure,
-- `fig05_reliability_source_only` and `fig06_reliability_era_adapter` as calibration figures,
-- `tables/adaptation_summary.csv` and `tables/adaptation_stats.csv` for the main tables.
 
 ## Testing
 
@@ -188,6 +180,6 @@ python -m unittest discover -s tests -p 'test_*.py'
 
 ## Development note
 
-The benchmark was written to be easy to extend. The most natural next addition is a graph/qpa-inspired neural predictor that plugs into the same evaluation interface as the current tree ensemble and residual adapter.
+The benchmark was written to be easy to extend. Optional graph-style estimator code is included as an experimental source-model family. It is provided only to demonstrate that the DriftQCap protocol can support graph-style source predictors.
 
 `run_paper_ready.py` already exports LaTeX tables and writes `readiness_report.md` automatically for each run.
