@@ -1,0 +1,13 @@
+{
+  "csv": "driftqcap_synthetic_paper_rf_v3.csv",
+  "source": "paper synthetic profile",
+  "sha256": "a2b097597c4d028ed8fe10c7d0f6d0852d663133895058d3fa5dbba609873f6f",
+  "stats": {
+    "rows": 5152,
+    "source_rows": 1120,
+    "target_rows": 4032,
+    "episodes": 25
+  },
+  "generated_at_utc": "2026-05-01T13:50:42.521705+00:00",
+  "generation_command": "python scripts/freeze_synthetic_paper_dataset.py --output-csv dataset_release/synthetic/driftqcap_synthetic_paper_rf_v3.csv"
+}

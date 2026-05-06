@@ -1,0 +1,12 @@
+{
+  "csv": "semi_synth_from_snapshots_clean.csv",
+  "source": "DriftQCap telemetry-anchored generator seeded from IBM backend calibration/noise snapshots",
+  "sha256": "f37de54088e32d566b63172f7b47655470f11ded8a8f35ef2362f45ec66aac80",
+  "stats": {
+    "rows": 6800,
+    "source_rows": 400,
+    "target_rows": 6400,
+    "episodes": 34
+  },
+  "generated_at_utc": "2026-05-01T13:50:42.550881+00:00"
+}

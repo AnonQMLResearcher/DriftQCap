@@ -1,0 +1,79 @@
+{
+  "required_columns": [
+    "circuit_id",
+    "episode_id",
+    "domain",
+    "shift_type",
+    "family",
+    "topology_kind",
+    "qubit_count",
+    "depth",
+    "num_1q_gates",
+    "num_2q_gates",
+    "two_qubit_density",
+    "avg_degree",
+    "edge_density",
+    "symmetry_score",
+    "periodicity_score",
+    "linearity_score",
+    "idle_fraction",
+    "layer_sparsity",
+    "t1_us",
+    "t2_us",
+    "readout_error",
+    "oneq_epg",
+    "twoq_epg",
+    "time_index",
+    "error_rate",
+    "pass_label"
+  ],
+  "splits": [
+    {
+      "path": "dataset_release/synthetic/driftqcap_synthetic_paper_rf_v3.csv",
+      "rows": 5152,
+      "n_columns": 52,
+      "missing_required_columns": []
+    },
+    {
+      "path": "dataset_release/semi_synth/semi_synth_from_snapshots_clean.csv",
+      "rows": 6800,
+      "n_columns": 41,
+      "missing_required_columns": []
+    },
+    {
+      "path": "dataset_release/real_hardware/real_data_multibackend_all.csv",
+      "rows": 816,
+      "n_columns": 33,
+      "missing_required_columns": []
+    }
+  ],
+  "common_columns_all_splits": [
+    "avg_degree",
+    "circuit_id",
+    "depth",
+    "domain",
+    "edge_density",
+    "episode_id",
+    "error_rate",
+    "family",
+    "idle_fraction",
+    "layer_sparsity",
+    "linearity_score",
+    "num_1q_gates",
+    "num_2q_gates",
+    "oneq_epg",
+    "pass_label",
+    "periodicity_score",
+    "qubit_count",
+    "readout_error",
+    "shift_type",
+    "symmetry_score",
+    "t1_us",
+    "t2_us",
+    "time_index",
+    "topology_kind",
+    "two_qubit_density",
+    "twoq_epg"
+  ],
+  "all_splits_have_required_columns": true
+}
